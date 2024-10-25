@@ -15,7 +15,10 @@ build-backend = "poetry.core.masonry.api"
 python = ">=3.9"
 
 # Required
+boto3 = "^1.0.0"
+cryptography = ">=35.0.0"
 jsonpath-ng = "^1.4.0"
+pyjwt = "^2.0.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.0.2"
