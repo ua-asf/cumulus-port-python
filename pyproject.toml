@@ -15,14 +15,24 @@ build-backend = "poetry.core.masonry.api"
 python = ">=3.9"
 
 # Required
+boto3 = "^1.0.0"
+botocore = "*"
+cryptography = ">=35.0.0"
 jsonpath-ng = "^1.4.0"
+pyjwt = "^2.0.0"
+requests = "^2.4.2"
 
 [tool.poetry.group.dev.dependencies]
+moto = "^5.0.18"
 pytest = "^8.0.2"
 pytest-cov = "^4.0.0"
+pytest-mock = "^3.14.0"
 
 [tool.pytest.ini_options]
 pythonpath="."
+markers = [
+    "auth: requires the 'auth' extra to be installed",
+]
 
 [tool.isort]
 profile = "black"
