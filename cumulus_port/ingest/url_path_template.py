@@ -21,7 +21,7 @@ def _get_single_value(data: dict, path: str):
     return values[0]
 
 
-def evaluate_operation(name, args):
+def evaluate_operation(name: str, args: list) -> str:
     """evaluate the operation specified in template
 
     :param name: the name of the operation
